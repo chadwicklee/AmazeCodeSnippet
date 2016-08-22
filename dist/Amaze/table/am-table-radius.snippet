@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-table:radius</Title>
+      <Author>南方网景</Author>
+      <Description>表格：圆角</Description>
+      <HelpUrl>http://amazeui.org/css/table</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-table:radius</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID> am-table-hover</ID>
+          <Type />
+          <ToolTip> am-table-hover</ToolTip>
+          <Default> am-table-hover</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>表格标题</ID>
+          <Type />
+          <ToolTip>表格标题</ToolTip>
+          <Default>表格标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>表格内容1</ID>
+          <Type />
+          <ToolTip>表格内容1</ToolTip>
+          <Default>表格内容1</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>active 表格内容</ID>
+          <Type />
+          <ToolTip>active 表格内容</ToolTip>
+          <Default>active 表格内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<table class="am-table am-table-radius$selected$$ am-table-hover$$end$">
+  <thead>
+    <tr>
+      <th>$selected$$表格标题$$end$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$selected$$表格内容1$$end$</td>
+    </tr>
+    <tr class="am-active">
+      <td>$selected$$active 表格内容$$end$</td>
+    </tr>
+  </tbody>
+</table>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

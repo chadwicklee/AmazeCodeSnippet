@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-btn-group:dropdown</Title>
+      <Author>南方网景</Author>
+      <Description>按钮组：下拉按钮</Description>
+      <HelpUrl>http://www.veelink.com</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-btn-group:dropdown</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>下拉按钮</ID>
+          <Type />
+          <ToolTip>下拉按钮</ToolTip>
+          <Default>下拉按钮</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<div class="am-btn-group">
+  <button class="am-btn am-btn-secondary">$selected$$下拉按钮$$end$</button>
+  <div class="am-dropdown" data-am-dropdown>
+    <button class="am-btn am-btn-secondary am-dropdown-toggle" data-am-dropdown-toggle> <span class="am-icon-caret-down"></span></button>
+    <ul class="am-dropdown-content">
+      <li class="am-dropdown-header">标题</li>
+      <li><a href="#">快乐的方式不只一种</a></li>
+      <li class="am-active"><a href="#">最荣幸是</a></li>
+      <li><a href="#">谁都是造物者的光荣</a></li>
+      <li class="am-disabled"><a href="#">就站在光明的角落</a></li>
+      <li class="am-divider"></li>
+      <li><a href="#">天空海阔 要做最坚强的泡沫</a></li>
+    </ul>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

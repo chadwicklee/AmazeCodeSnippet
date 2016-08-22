@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-collapse:list</Title>
+      <Author>南方网景</Author>
+      <Description>折叠面板：菜单</Description>
+      <HelpUrl>http://amazeui.org/javascript/collapse</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-collapse:list</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>首页</ID>
+          <Type />
+          <ToolTip>首页</ToolTip>
+          <Default>首页</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>人员管理</ID>
+          <Type />
+          <ToolTip>人员管理</ToolTip>
+          <Default>人员管理</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>单位（部门）管理</ID>
+          <Type />
+          <ToolTip>单位（部门）管理</ToolTip>
+          <Default>单位（部门）管理</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>角色管理</ID>
+          <Type />
+          <ToolTip>角色管理</ToolTip>
+          <Default>角色管理</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+  <![CDATA[
+<!-- 折叠列表效果 -->
+<ul class="am-list admin-sidebar-list" id="collapase-nav-1">
+  <li  class="am-panel">
+    <a data-am-collapse="{parent: '#collapase-nav-1'}" href="#/"><i class="am-icon-home am-margin-left-sm"></i> $selected$$首页$$end$</a>
+  </li>
+
+  <li class="am-panel">
+    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav'}">
+        <i class="am-icon-users am-margin-left-sm"></i>  $selected$$人员管理$$end$ <i class="am-icon-angle-right am-fr am-margin-right"></i>
+    </a>
+    <ul class="am-list am-collapse admin-sidebar-sub" id="user-nav">
+        <li><a href="#/userAdd"><i class="am-icon-user am-margin-left-sm"></i> 添加人员 </a></li>
+        <li><a href="#/userList/0"><i class="am-icon-user am-margin-left-sm"></i> 人员列表 </a></li>
+    </ul>
+  </li>
+
+  <li class="am-panel">
+    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#company-nav'}">
+        <i class="am-icon-table am-margin-left-sm"></i> $selected$$单位（部门）管理$$end$ <i class="am-icon-angle-right am-fr am-margin-right"></i>
+    </a>
+    <ul class="am-list am-collapse admin-sidebar-sub" id="company-nav">
+        <li><a href="#/companyAdd"><span class="am-icon-table am-margin-left-sm"></span> 添加单位（部门） </a></li>
+        <li><a href="#/companyList/0"><span class="am-icon-table am-margin-left-sm"></span> 单位（部门）列表 </a></li>
+    </ul>
+  </li>
+
+  <li class="am-panel">
+    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#role-nav'}">
+        <i class="am-icon-table am-margin-left-sm"></i> $selected$$角色管理$$end$ <i class="am-icon-angle-right am-fr am-margin-right"></i>
+    </a>
+    <ul class="am-list am-collapse admin-sidebar-sub" id="role-nav">
+        <li><a href="#/roleAdd"><span class="am-icon-table am-margin-left-sm"></span> 添加角色 </a></li>
+        <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 角色列表 </a></li>
+    </ul>
+  </li>
+</ul>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-dropdown:justify</Title>
+      <Author>南方网景</Author>
+      <Description>下拉组件：宽度自适应</Description>
+      <HelpUrl>http://amazeui.org/javascript/dropdown</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-dropdown:justify</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>doc-dropdown-justify</ID>
+          <Type />
+          <ToolTip>doc-dropdown-justify</ToolTip>
+          <Default>doc-dropdown-justify</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>doc-dropdown-justify</ID>
+          <Type />
+          <ToolTip>doc-dropdown-justify</ToolTip>
+          <Default>doc-dropdown-justify</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>宽度适应下拉</ID>
+          <Type />
+          <ToolTip>宽度适应下拉</ToolTip>
+          <Default>宽度适应下拉</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<div id="$selected$$doc-dropdown-justify$$end$">
+  <div class="am-dropdown" data-am-dropdown="{justify: '#$selected$$doc-dropdown-justify$$end$'}">
+    <button class="am-btn am-btn-success am-dropdown-toggle">$selected$$宽度适应下拉$$end$<span class="am-icon-caret-down"></span></button>
+    <div class="am-dropdown-content">
+      <h2>$selected$$标题$$end$</h2>
+      <p>
+        $selected$$内容$$end$
+      </p>
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-slider:title</Title>
+      <Author>南方网景</Author>
+      <Description>图片轮播：标题和箭头</Description>
+      <HelpUrl>http://amazeui.org/widgets/slider</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-slider:title</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>图片地址</ID>
+          <Type />
+          <ToolTip>图片地址</ToolTip>
+          <Default>图片地址</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+      
+      <div data-am-widget="slider" class="am-slider am-slider-c3" data-am-slider='{&quot;controlNav&quot;:false}' >
+  <ul class="am-slides">
+      <li>
+        	<img src="$selected$$图片地址$$end$">
+          <div class="am-slider-desc"><div class="am-slider-counter"><span class="am-active">1</span>/4</div>$selected$$标题$$end$</div>
+         
+      </li>
+      <li>
+        	<img src="$selected$$图片地址$$end$">
+          <div class="am-slider-desc"><div class="am-slider-counter"><span class="am-active">2</span>/4</div>$selected$$标题$$end$</div>
+         
+      </li>
+      <li>
+        	<img src="$selected$$图片地址$$end$">
+          <div class="am-slider-desc"><div class="am-slider-counter"><span class="am-active">3</span>/4</div>$selected$$标题$$end$</div>
+         
+      </li>
+      <li>
+        	<img src="$selected$$图片地址$$end$">
+          <div class="am-slider-desc"><div class="am-slider-counter"><span class="am-active">4</span>/4</div>$selected$$标题$$end$</div>
+         
+      </li>
+  </ul>
+</div>
+
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

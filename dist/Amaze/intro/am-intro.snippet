@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-intro</Title>
+      <Author>南方网景</Author>
+      <Description>内容：默认</Description>
+      <HelpUrl>http://amazeui.org/widgets/intro</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-intro</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>图片</ID>
+          <Type />
+          <ToolTip>图片</ToolTip>
+          <Default>图片</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<div data-am-widget="intro" class="am-intro am-cf am-intro-default" >
+      <div class="am-intro-hd">
+        <h2 class="am-intro-title">$selected$$标题$$end$</h2>
+            <a class="am-intro-more am-intro-more-top " href="#more">更多细节</a>
+      </div>
+    <div class="am-g am-intro-bd">
+        <div
+            class="am-intro-left am-u-sm-5"><img src="$selected$$图片$$end$" alt="$selected$$标题$$end$" /></div>
+        <div
+            class="am-intro-right am-u-sm-7">$selected$$内容$$end$</div>
+    </div>
+  </div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

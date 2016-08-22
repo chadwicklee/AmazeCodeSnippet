@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-alert:close</Title>
+      <Author>南方网景</Author>
+      <Description>警告框：关闭</Description>
+      <HelpUrl>http://amazeui.org/javascript/alert</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-alert</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="|">
+        <![CDATA[
+<div class="am-alert" id="your-alert-1">
+  <button type="button" class="am-close">&times;</button>
+  <p>|selected||内容||end|</p>
+</div>
+
+<button type="button" class="am-btn am-btn-warning" id="doc-alert-btn-close">点击关闭上面的 Alert</button>
+<script>
+  $(function() {
+    $('#doc-alert-btn-close').one('click', function() {
+      $('#your-alert-1').alert('close');
+    });
+
+    $(document).on('close.alert.amui', '#your-alert-1', function(e) {
+      alert('警告框开始关闭！');
+    });
+
+    $(document).on('closed.alert.amui', '#your-alert-1', function(e) {
+      alert('警告框关闭完成！');
+    });
+  });
+</script>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

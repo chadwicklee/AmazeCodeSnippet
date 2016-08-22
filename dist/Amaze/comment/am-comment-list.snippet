@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-comment:list</Title>
+      <Author>南方网景</Author>
+      <Description>评论组件：综合</Description>
+      <HelpUrl>http://amazeui.org/css/comment</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-comment:list</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>评论者</ID>
+          <Type />
+          <ToolTip>评论者</ToolTip>
+          <Default>评论者</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>评论内容</ID>
+          <Type />
+          <ToolTip>评论内容</ToolTip>
+          <Default>评论内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<ul class="am-comments-list am-comments-list-flip">
+        <li class="am-comment">
+            <a href="#link-to-user-home"><img width="48" height="48" class="am-comment-avatar" alt="" src=""></a>
+            <div class="am-comment-main">
+                <header class="am-comment-hd"><div class="am-comment-meta"><a class="am-comment-author" href="#link-to-user"> $selected$$评论者$$end$</a> 评论于 <time title="2013年7月27日 下午7:54 " datetime="2013-07-27T04:54:29-07:00">2014-7-12 15:30</time></div></header><div class="am-comment-bd">
+                    <p> $selected$$评论内容$$end$</p><blockquote>
+
+                        <article class="am-comment">
+                            <a href="#link-to-user-home">
+                                <img src="" alt="" class="am-comment-avatar" width="48" height="48" />
+                            </a>
+
+                            <div class="am-comment-main">
+                                <header class="am-comment-hd">
+                                    <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                    <div class="am-comment-meta">
+                                        <a href="#link-to-user" class="am-comment-author">某人</a>
+                                        评论于 <time datetime="2013-07-27T04:54:29-07:00" title="2013年7月27日 下午7:54 格林尼治标准时间+0800">2014-7-12 15:30</time>
+                                    </div>
+                                </header>
+
+                                <div class="am-comment-bd">
+                                    ...
+                                </div>
+                            </div>
+                        </article>
+
+                    </blockquote>
+                </div>
+            </div>
+        </li>
+        <li class="am-comment am-comment-primary"><a href="#link-to-user-home"><img width="48" height="48" class="am-comment-avatar" alt="" src=""></a><div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a class="am-comment-author" href="#link-to-user">路人乙</a> 评论于 <time title="2013年7月27日 下午7:54 格林尼治标准时间+0800" datetime="2013-07-27T04:54:29-07:00">2014-7-14 23:30</time></div></header><div class="am-comment-bd"><p><a href="#lin-to-user">@某人</a> 撸主保重！</p></div></div></li>
+        <li class="am-comment am-comment-flip am-comment-secondary"><a href="#link-to-user-home"><img width="48" height="48" class="am-comment-avatar" alt="" src=""></a><div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a class="am-comment-author" href="#link-to-user">某人</a> 评论于 <time title="2013年7月27日 下午7:54 格林尼治标准时间+0800" datetime="2013-07-27T04:54:29-07:00">2014-7-14 23:301</time></div></header><div class="am-comment-bd"><p><a href="#lurenyi">@路人乙</a> 朕知道了！</p></div></div></li>
+        <li class="am-comment am-comment-highlight"><a href="#link-to-user-home"><img width="48" height="48" class="am-comment-avatar" alt="" src=""></a><div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a class="am-comment-author" href="#link-to-user">路人乙</a> 评论于 <time title="2013年7月27日 下午7:54 格林尼治标准时间+0800" datetime="2013-07-27T04:54:29-07:00">2014-7-14 23:32</time></div></header><div class="am-comment-bd"><p><a href="#lin-to-user">@某人</a> 艹民告退！</p></div></div></li>
+        <li class="am-comment am-comment-flip am-comment-danger"><a href="#link-to-user-home"><img width="48" height="48" class="am-comment-avatar" alt="" src=""></a><div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a class="am-comment-author" href="#link-to-user">某人</a> 评论于 <time title="2013年7月27日 下午7:54 格林尼治标准时间+0800" datetime="2013-07-27T04:54:29-07:00">2014-7-14 23:301</time></div></header><div class="am-comment-bd"><p><a href="#lurenyi">@路人乙</a> 滚！</p></div></div></li>
+
+    </ul>
+      
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

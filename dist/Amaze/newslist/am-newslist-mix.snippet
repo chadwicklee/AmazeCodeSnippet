@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-newslist:mix</Title>
+      <Author>南方网景</Author>
+      <Description>资讯列表：图文列表</Description>
+      <HelpUrl>http://amazeui.org/widgets/list_news</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-newslist:mix</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>图片</ID>
+          <Type />
+          <ToolTip>图片</ToolTip>
+          <Default>图片</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>链接</ID>
+          <Type />
+          <ToolTip>链接</ToolTip>
+          <Default>链接</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+ <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
+  <!--列表标题-->
+    <div class="am-list-news-hd am-cf">
+       <!--带更多链接-->
+        <a href="###" class="">
+          <h2>缩略图在标题右边 + 摘要</h2>
+            <span class="am-list-news-more am-fr">更多 &raquo;</span>
+        </a>
+          </div>
+  <div class="am-list-news-bd">
+  <ul class="am-list">
+     <!--缩略图在标题右边-->
+      <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-right">
+        <div class=" am-u-sm-8 am-list-main">
+            <h3 class="am-list-item-hd"><a href="$selected$$链接$$end$" class="">$selected$$标题$$end$</a></h3>
+            <div class="am-list-item-text">$selected$$内容$$end$</div>
+        </div>
+          <div class="am-u-sm-4 am-list-thumb">
+            <a href="$selected$$链接$$end$" class="">
+              <img src="$selected$$图片$$end$" alt="$selected$$标题$$end$"/>
+            </a>
+          </div>
+      </li>
+      <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-right">
+        <div class=" am-u-sm-8 am-list-main">
+            <h3 class="am-list-item-hd"><a href="$selected$$图片$$end$" class="">$selected$$标题$$end$</a></h3>
+            <div class="am-list-item-text">$selected$$内容$$end$</div>
+        </div>
+          <div class="am-u-sm-4 am-list-thumb">
+            <a href="$selected$$链接$$end$" class="">
+              <img src="$selected$$图片$$end$" alt="$selected$$标题$$end$"/>
+            </a>
+          </div>
+      </li>
+      <li class="am-g am-list-item-desced">
+        <div class=" am-list-main">
+            <h3 class="am-list-item-hd"><a href="$selected$$链接$$end$" class="">$selected$$标题$$end$</a></h3>
+            <div class="am-list-item-text">$selected$$内容$$end$</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

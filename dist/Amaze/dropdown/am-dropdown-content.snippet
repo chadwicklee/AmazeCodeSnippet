@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-dropdown:content</Title>
+      <Author>南方网景</Author>
+      <Description>下拉组件：默认</Description>
+      <HelpUrl>http://amazeui.org/javascript/dropdown</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-dropdown:content</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Dropdown</ID>
+          <Type />
+          <ToolTip>Dropdown</ToolTip>
+          <Default>Dropdown</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<div class="am-dropdown" data-am-dropdown>
+  <button class="am-btn am-btn-success am-dropdown-toggle">$selected$$Dropdown$$end$ <span class="am-icon-caret-down"></span></button>
+  <div class="am-dropdown-content">
+    $selected$$内容$$end$
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

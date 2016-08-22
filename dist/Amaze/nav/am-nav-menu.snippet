@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-nav:menu</Title>
+      <Author>南方网景</Author>
+      <Description>导航：下拉菜单</Description>
+      <HelpUrl>http://amazeui.org/css/nav</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-nav:menu</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>首页</ID>
+          <Type />
+          <ToolTip>首页</ToolTip>
+          <Default>首页</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>项目</ID>
+          <Type />
+          <ToolTip>项目</ToolTip>
+          <Default>项目</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>菜单</ID>
+          <Type />
+          <ToolTip>菜单</ToolTip>
+          <Default>菜单</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<ul class="am-nav am-nav-pills">
+    <li class="am-active"><a href="#">$selected$$首页$$end$</a></li>
+    <li><a href="#">$selected$$项目$$end$</a></li>
+    <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+            $selected$$菜单$$end$ <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+            <li class="am-dropdown-header">Header</li>
+            <li><a href="#">1. 一行代码，简单快捷</a></li>
+            <li class="am-active"><a href="#">2. 网址不变且唯一</a></li>
+            <li><a href="#">3. 内容实时同步更新</a></li>
+            <li class="am-disabled"><a href="#">4. 云端跨平台适配</a></li>
+            <li class="am-divider"></li>
+            <li><a href="#">5. 专属的一键拨叫</a></li>
+          </ul>
+    </li>
+</ul>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

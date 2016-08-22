@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-form:upload</Title>
+      <Author>南方网景</Author>
+      <Description>表单组件：上传</Description>
+      <HelpUrl>http://amazeui.org/css/form</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-form:upload</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>选择要上传的文件</ID>
+          <Type />
+          <ToolTip>选择要上传的文件</ToolTip>
+          <Default>选择要上传的文件</Default>
+          <Function />
+        </Literal>
+
+      </Declarations>
+      <Code Language="html" Kind=""  Delimiter="|">
+        <![CDATA[
+<div class="am-form-group am-form-file">
+  <button type="button" class="am-btn am-btn-danger am-btn-sm">
+    <i class="am-icon-cloud-upload"></i> |selected||选择要上传的文件||end|</button>
+  <input id="doc-form-file" type="file" multiple>
+</div>
+<div id="file-list"></div>
+<script>
+  $(function() {
+    $('#doc-form-file').on('change', function() {
+      var fileNames = '';
+      $.each(this.files, function() {
+        fileNames += '<span class="am-badge">' + this.name + '</span> ';
+      });
+      $('#file-list').html(fileNames);
+    });
+  });
+</script>
+
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

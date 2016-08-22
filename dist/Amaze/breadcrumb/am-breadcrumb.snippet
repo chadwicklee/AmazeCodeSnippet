@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-breadcrumb</Title>
+      <Author>南方网景</Author>
+      <Description>面包屑：默认</Description>
+      <HelpUrl>http://amazeui.org/css/breadcrumb</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-breadcrumb</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>首页</ID>
+          <Type />
+          <ToolTip>首页</ToolTip>
+          <Default>首页</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>分类</ID>
+          <Type />
+          <ToolTip>分类</ToolTip>
+          <Default>分类</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<ol class="am-breadcrumb">
+  <li><a href="#">$selected$$首页$$end$</a></li>
+  <li><a href="#">$selected$$分类$$end$</a></li>
+  <li class="am-active">$selected$$内容$$end$</li>
+</ol>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-modal:confirm</Title>
+      <Author>南方网景</Author>
+      <Description>模拟窗口：确认框</Description>
+      <HelpUrl>http://amazeui.org/javascript/modal</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-modal:confirm</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>my-id</ID>
+          <Type />
+          <ToolTip>my-id</ToolTip>
+          <Default>my-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>my-confirm</ID>
+          <Type />
+          <ToolTip>my-confirm</ToolTip>
+          <Default>my-confirm</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>confirm title</ID>
+          <Type />
+          <ToolTip>confirm title</ToolTip>
+          <Default>confirm title</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>my-prompt</ID>
+          <Type />
+          <ToolTip>my-prompt</ToolTip>
+          <Default>my-prompt</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 触发 button -->
+<button class="am-btn am-btn-secondary" data-am-modal="{target: '#$selected$$my-id$$end$'}">confirm</button>
+<div class="am-modal am-modal-confirm" tabindex="-1" id="$selected$$my-confirm$$end$">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">$selected$$confirm title$$end$</div>
+    <div class="am-modal-bd">
+      $selected$$内容$$end$
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+<div class="am-modal am-modal-prompt" tabindex="-1" id="$selected$$my-prompt$$end$">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">$selected$$标题$$end$</div>
+    <div class="am-modal-bd">
+      $selected$$内容$$end$
+      <input type="text" class="am-modal-prompt-input">
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

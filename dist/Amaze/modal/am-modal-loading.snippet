@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-modal:loading</Title>
+      <Author>南方网景</Author>
+      <Description>模拟窗口：载入框</Description>
+      <HelpUrl>http://amazeui.org/javascript/modal</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-modal:loading</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>my-id</ID>
+          <Type />
+          <ToolTip>my-id</ToolTip>
+          <Default>my-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>my-modal-loading</ID>
+          <Type />
+          <ToolTip>my-modal-loading</ToolTip>
+          <Default>my-modal-loading</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>正在载入...</ID>
+          <Type />
+          <ToolTip>正在载入...</ToolTip>
+          <Default>正在载入...</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 触发 button -->
+<button class="am-btn am-btn-secondary" data-am-modal="{target: '#$selected$$my-id$$end$'}">loading</button>
+<div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="$selected$$my-modal-loading$$end$">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">$selected$$正在载入...$$end$</div>
+    <div class="am-modal-bd">
+      <span class="am-icon-spinner am-icon-spin"></span>
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

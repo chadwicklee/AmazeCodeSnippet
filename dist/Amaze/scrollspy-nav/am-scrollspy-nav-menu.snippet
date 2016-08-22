@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-scrollspy-nav:menu</Title>
+      <Author>南方网景</Author>
+      <Description>滚动导航：菜单</Description>
+      <HelpUrl>http://amazeui.org/javascript/scrollspynav</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-scrollspy-nav:menu</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>title</ID>
+          <Type />
+          <ToolTip>title</ToolTip>
+          <Default>title</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<nav class="scrollspy-nav" data-am-scrollspy-nav="{offsetTop: 45}" data-am-sticky>
+  <ul>
+    <li><a href="#$selected$$title$$end$">$selected$$标题$$end$</a></li>
+    <li><a href="#team">成员介绍</a></li>
+    <li><a href="#ep">首张 EP</a></li>
+    <li><a href="#second">再见王子</a></li>
+    <li><a href="#third">第三张</a></li>
+  </ul>
+</nav>
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

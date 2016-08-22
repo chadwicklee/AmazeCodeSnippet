@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-valid:ajax</Title>
+      <Author>南方网景</Author>
+      <Description>表单验证：AJAX</Description>
+      <HelpUrl>http://amazeui.org/javascript/validator</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-valid:ajax</Shortcut>
+    </Header>
+    <Snippet>
+      
+      <Code Language="html" Kind="" Delimiter="|">
+        <![CDATA[
+<form action="" class="am-form" id="doc-vld-ajax">
+  <fieldset>
+    <legend>自定义验证</legend>
+    <div class="am-form-group">
+      <label for="doc-vld-ajax-count">Ajax 服务器端验证：</label>
+      <input type="text" class="js-ajax-validate" id="doc-vld-ajax-count"
+             placeholder="只能填写数字 10" data-validate-async/>
+    </div>
+
+    <div class="am-form-group">
+      <label for="doc-vld-sync">客户端验证：</label>
+      <input type="text" class="js-sync-validate" id="doc-vld-sync"
+             placeholder="只能填写数字 10"/>
+    </div>
+
+    <button class="am-btn am-btn-secondary" type="submit">提交</button>
+  </fieldset>
+</form>
+<script>
+$(function() {
+  $('#doc-vld-ajax').validator({
+    validate: function(validity) {
+      var v = $(validity.field).val();
+
+      var comparer = function(v1, v2) {
+        if (v1 != v2) {
+          validity.valid = false;
+        }
+
+        // 这些属性目前 v2.3 以前没什么用，如果不想写可以忽略
+        // 从 v2.3 开始，这些属性被 getValidationMessage() 用于生成错误提示信息
+        if (v2 < 10) {
+          validity.rangeUnderflow = true;
+        } else if(v2 > 10) {
+          validity.rangeOverflow = true;
+        }
+      };
+
+      // Ajax 验证
+      if ($(validity.field).is('.js-ajax-validate')) {
+        // 异步操作必须返回 Deferred 对象
+        return $.ajax({
+          url: 'http://s.amazeui.org/media/i/demos/validate.json',
+          // cache: false, 实际使用中请禁用缓存
+          dataType: 'json'
+        }).then(function(data) {
+          comparer(data.count, v);
+          return validity;
+        }, function() {
+          return validity;
+        });
+      }
+
+      // 本地验证，同步操作，无需返回值
+      if ($(validity.field).is('.js-sync-validate')) {
+        comparer(10, v);
+        // return validity;
+      }
+    }
+  });
+});
+</script>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

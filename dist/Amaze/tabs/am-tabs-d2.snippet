@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-tabs:d2</Title>
+      <Author>南方网景</Author>
+      <Description>切换卡：下边框</Description>
+      <HelpUrl>http://amazeui.org/widgets/tabs</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-tabs:d2</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+
+  <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+      <ul class="am-tabs-nav am-cf">
+          <li class="am-active"><a href="[data-tab-panel-0]">$selected$$标题$$end$</a></li>
+          <li class=""><a href="[data-tab-panel-1]">$selected$$标题$$end$</a></li>
+          <li class=""><a href="[data-tab-panel-2]">$selected$$标题$$end$</a></li>
+      </ul>
+      <div class="am-tabs-bd">
+          <div data-tab-panel-0 class="am-tab-panel am-active">
+            $selected$$内容$$end$
+          </div>
+          <div data-tab-panel-1 class="am-tab-panel ">
+            $selected$$内容$$end$
+          </div>
+          <div data-tab-panel-2 class="am-tab-panel ">
+            $selected$$内容$$end$
+          </div>
+      </div>
+  </div>
+
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

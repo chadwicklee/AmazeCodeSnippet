@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-navbar</Title>
+      <Author>南方网景</Author>
+      <Description>工具栏：默认</Description>
+      <HelpUrl>http://amazeui.org/widgets/navbar</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-navbar</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default "
+      id="">
+      <ul class="am-navbar-nav am-cf am-avg-sm-4">
+          <li >
+            <a href="#" class="">
+                  <span class="am-icon-phone"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+          <li data-am-navbar-share>
+            <a href="###" class="">
+                  <span class="am-icon-share-square-o"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+          <li data-am-navbar-qrcode>
+            <a href="###" class="">
+                  <span class="am-icon-qrcode"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+          <li >
+            <a href="#" class="">
+                  <span class="am-icon-github"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+          <li >
+            <a href="#" class="">
+                  <span class="am-icon-download"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+          <li >
+            <a href="#" class="">
+                  <span class="am-icon-location-arrow"></span>
+                <span class="am-navbar-label">$selected$$标题$$end$</span>
+            </a>
+          </li>
+      </ul>
+  </div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

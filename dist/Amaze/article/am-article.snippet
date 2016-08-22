@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-article</Title>
+      <Author>南方网景</Author>
+      <Description>文章内容</Description>
+      <HelpUrl>http://amazeui.org/css/article</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-article</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>title</ID>
+          <Type />
+          <ToolTip>title</ToolTip>
+          <Default>title</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>meta</ID>
+          <Type />
+          <ToolTip>meta</ToolTip>
+          <Default>meta</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>lead</ID>
+          <Type />
+          <ToolTip>lead</ToolTip>
+          <Default>lead</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<article class="am-article">
+  <div class="am-article-hd">
+    <h1 class="am-article-title">$selected$$title$$end$</h1>
+    <p class="am-article-meta">$selected$$meta$$end$</p>
+  </div>
+
+  <div class="am-article-bd">
+    <p class="am-article-lead">$selected$$lead$$end$</p>
+    $selected$$内容$$end$
+  </div>
+</article>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

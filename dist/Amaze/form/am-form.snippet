@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-form</Title>
+      <Author>南方网景</Author>
+      <Description>表单组件：默认</Description>
+      <HelpUrl>http://amazeui.org/css/form</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-form</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>action</ID>
+          <Type />
+          <ToolTip>action</ToolTip>
+          <Default>action</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>表单标题</ID>
+          <Type />
+          <ToolTip>表单标题</ToolTip>
+          <Default>表单标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>姓名</ID>
+          <Type />
+          <ToolTip>姓名</ToolTip>
+          <Default>姓名</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>输入你的姓名</ID>
+          <Type />
+          <ToolTip>输入你的姓名</ToolTip>
+          <Default>输入你的姓名</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>提交</ID>
+          <Type />
+          <ToolTip>提交</ToolTip>
+          <Default>提交</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<form action="$selected$$action$$end$" method="POST" role="form" class="am-form">
+  <legend>$selected$$表单标题$$end$</legend>
+
+  <div class="am-form-group">
+    <label for="">$selected$$姓名$$end$</label>
+    <input type="text" id="" placeholder="$selected$$输入你的姓名$$end$">
+  </div>
+
+  <button type="submit" class="am-btn am-btn-primary">$selected$$提交$$end$</button>
+</form>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

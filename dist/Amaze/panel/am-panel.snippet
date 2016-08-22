@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-panel</Title>
+      <Author>南方网景</Author>
+      <Description>面板：默认（白色）</Description>
+      <HelpUrl>http://amazeui.org/css/panel</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-panel</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>面板标题</ID>
+          <Type />
+          <ToolTip>面板标题</ToolTip>
+          <Default>面板标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>面板内容</ID>
+          <Type />
+          <ToolTip>面板内容</ToolTip>
+          <Default>面板内容</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>面板页脚</ID>
+          <Type />
+          <ToolTip>面板页脚</ToolTip>
+          <Default>面板页脚</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<section class="am-panel am-panel-default">
+  <header class="am-panel-hd">
+    <h3 class="am-panel-title">$selected$$面板标题$$end$</h3>
+  </header>
+  <div class="am-panel-bd">
+    $selected$$面板内容$$end$
+  </div>
+  <footer class="am-panel-footer">$selected$$面板页脚$$end$</footer>
+</section>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

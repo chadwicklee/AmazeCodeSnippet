@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-ucheck-radio:disabled</Title>
+      <Author>南方网景</Author>
+      <Description>单选框：radio-不可用</Description>
+      <HelpUrl>http://amazeui.org/javascript/ucheck</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-ucheck-radio:disabled</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>radio</ID>
+          <Type />
+          <ToolTip>radio</ToolTip>
+          <Default>radio</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>disabled</ID>
+          <Type />
+          <ToolTip>disabled</ToolTip>
+          <Default>disabled</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<label class="am-radio">
+  <input type="$selected$$radio$$end$" value="" data-am-ucheck disabled> $selected$$disabled$$end$
+</label>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

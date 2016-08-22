@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-tabs:add</Title>
+      <Author>南方网景</Author>
+      <Description>切换卡：动态插入</Description>
+      <HelpUrl>http://amazeui.org/javascript/tabs</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-tabs:add</Shortcut>
+    </Header>
+    <Snippet>
+
+      <Code Language="html" Kind="" Delimiter="|">
+        <![CDATA[
+<div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active"><a href="javascript: void(0)">流浪</a></li>
+    <li><a href="javascript: void(0)">流浪</a></li>
+    <li><a href="javascript: void(0)">再流浪</a></li>
+  </ul>
+
+  <div class="am-tabs-bd">
+    <div class="am-tab-panel am-active">
+      ...
+    </div>
+    <div class="am-tab-panel">
+      ...
+    </div>
+    <div class="am-tab-panel">
+      ...
+    </div>
+  </div>
+</div>
+<br />
+<button type="button" class="am-btn am-btn-primary js-append-tab">插入 Tab</button>
+<script>
+  $(function() {
+    var tabCounter = 0;
+    var $tab = $('#doc-tab-demo-1');
+    var $nav = $tab.find('.am-tabs-nav');
+    var $bd = $tab.find('.am-tabs-bd');
+
+    function addTab() {
+      var nav = '<li><span class="am-icon-close"></span>' +
+        '<a href="javascript: void(0)">标签 ' + tabCounter + '</a></li>';
+      var content = '<div class="am-tab-panel">动态插入的标签内容' + tabCounter + '</div>';
+
+      $nav.append(nav);
+      $bd.append(content);
+      tabCounter++;
+      $tab.tabs('refresh');
+    }
+
+    // 动态添加标签页
+    $('.js-append-tab').on('click', function() {
+      addTab();
+    });
+
+    // 移除标签页
+    $nav.on('click', '.am-icon-close', function() {
+      var $item = $(this).closest('li');
+      var index = $nav.children('li').index($item);
+
+      $item.remove();
+      $bd.find('.am-tab-panel').eq(index).remove();
+
+      $tab.tabs('open', index > 0 ? index - 1 : index + 1);
+      $tab.tabs('refresh');
+    });
+  });
+</script>
+<style>
+ .am-tabs-nav li {
+    position: relative;
+    z-index: 1;
+  }
+
+  .am-tabs-nav .am-icon-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .am-tabs-nav .am-icon-close:hover {
+    color: #333;
+  }
+
+  .am-tabs-nav .am-icon-close ~ a {
+    padding-right: 25px!important;
+  }
+</style>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

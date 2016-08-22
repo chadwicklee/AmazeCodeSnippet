@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-modal</Title>
+      <Author>南方网景</Author>
+      <Description>模拟窗口：默认</Description>
+      <HelpUrl>http://amazeui.org/javascript/modal</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-modal</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Modal</ID>
+          <Type />
+          <ToolTip>Modal</ToolTip>
+          <Default>Modal</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>Modal 标题</ID>
+          <Type />
+          <ToolTip>Modal 标题</ToolTip>
+          <Default>Modal 标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>Modal 内容</ID>
+          <Type />
+          <ToolTip>Modal 内容</ToolTip>
+          <Default>Modal 内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 触发 button -->
+<button class="am-btn am-btn-primary" data-am-modal>$selected$$Modal$$end$</button>
+<div class="am-modal am-modal-no-btn" tabindex="-1">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">$selected$$Modal 标题$$end$
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+      $selected$$Modal 内容$$end$
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

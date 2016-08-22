@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-selected</Title>
+      <Author>南方网景</Author>
+      <Description>下拉选框：默认（单选）</Description>
+      <HelpUrl>http://amazeui.org/javascript/selected</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-selected</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>a1</ID>
+          <Type />
+          <ToolTip>a1</ToolTip>
+          <Default>a1</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>title</ID>
+          <Type />
+          <ToolTip>title</ToolTip>
+          <Default>title</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>a2</ID>
+          <Type />
+          <ToolTip>a2</ToolTip>
+          <Default>a2</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>selected</ID>
+          <Type />
+          <ToolTip>selected</ToolTip>
+          <Default>selected</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<select data-am-selected>
+  <option value="$selected$$a1$$end$">$selected$$title$$end$</option>
+  <option value="$selected$$a2$$end$" selected>$selected$$selected$$end$</option>
+</select>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

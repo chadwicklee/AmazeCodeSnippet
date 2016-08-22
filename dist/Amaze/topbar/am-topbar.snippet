@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-topbar</Title>
+      <Author>南方网景</Author>
+      <Description>导航条：默认（白色）</Description>
+      <HelpUrl>http://amazeui.org/css/topbar</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-topbar</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Topbar 导航条</ID>
+          <Type />
+          <ToolTip>Topbar 导航条</ToolTip>
+          <Default>Topbar 导航条</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>#doc-topbar-collapse</ID>
+          <Type />
+          <ToolTip>#doc-topbar-collapse</ToolTip>
+          <Default>#doc-topbar-collapse</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>导航切换</ID>
+          <Type />
+          <ToolTip>导航切换</ToolTip>
+          <Default>导航切换</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>doc-topbar-collapse</ID>
+          <Type />
+          <ToolTip>doc-topbar-collapse</ToolTip>
+          <Default>doc-topbar-collapse</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>下拉列表 active</ID>
+          <Type />
+          <ToolTip>下拉列表 active</ToolTip>
+          <Default>下拉列表 active</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>下拉</ID>
+          <Type />
+          <ToolTip>下拉</ToolTip>
+          <Default>下拉</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>li header</ID>
+          <Type />
+          <ToolTip>li header</ToolTip>
+          <Default>li header</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>下拉列表01</ID>
+          <Type />
+          <ToolTip>下拉列表01</ToolTip>
+          <Default>下拉列表01</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<header class="am-topbar">
+  <h1 class="am-topbar-brand">
+      <a href="#">$selected$$Topbar 导航条$$end$</a>
+  </h1>
+  <!-- screen < 640 button show -->
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '$selected$$#doc-topbar-collapse$$end$'}"><span class="am-sr-only">$selected$$导航切换$$end$</span> <span class="am-icon-bars"></span></button>
+
+  <!-- screen < 640 hide -->
+  <div class="am-collapse am-topbar-collapse" id="$selected$$doc-topbar-collapse$$end$">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-active"><a href="#">$selected$$下拉列表 active$$end$</a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          $selected$$下拉$$end$ <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li class="am-dropdown-header">$selected$$li header$$end$</li>
+          <li><a href="#">$selected$$下拉列表01$$end$</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- topbar-right -->
+    <div class="am-topbar-right">
+      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">$selected$$内容$$end$</button>
+    </div>
+  </div>
+</header>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-form:icon</Title>
+      <Author>南方网景</Author>
+      <Description>表单组件：图标</Description>
+      <HelpUrl>http://amazeui.org/css/form</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-form:icon</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>日期</ID>
+          <Type />
+          <ToolTip>日期</ToolTip>
+          <Default>日期</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>时间</ID>
+          <Type />
+          <ToolTip>时间</ToolTip>
+          <Default>时间</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind=""  Delimiter="$">
+        <![CDATA[
+<form action="" class="am-form am-form-inline">
+  <div class="am-form-group am-form-icon">
+    <i class="am-icon-calendar"></i>
+    <input type="text" class="am-form-field" placeholder="$selected$$日期$$end$">
+  </div>
+
+  <div class="am-form-group am-form-icon">
+    <i class="am-icon-clock-o"></i>
+    <input type="text" class="am-form-field" placeholder="$selected$$时间$$end$">
+  </div>
+</form>
+
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

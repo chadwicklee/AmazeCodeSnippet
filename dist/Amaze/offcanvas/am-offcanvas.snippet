@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-offcanvas</Title>
+      <Author>南方网景</Author>
+      <Description>侧边栏：默认（左侧）</Description>
+      <HelpUrl>http://amazeui.org/1.x/javascript/offcanvas/</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-offcanvas</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>#your-id</ID>
+          <Type />
+          <ToolTip>#your-id</ToolTip>
+          <Default>#your-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>点击显示侧边栏</ID>
+          <Type />
+          <ToolTip>点击显示侧边栏</ToolTip>
+          <Default>点击显示侧边栏</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>your-id</ID>
+          <Type />
+          <ToolTip>your-id</ToolTip>
+          <Default>your-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>内容</ID>
+          <Type />
+          <ToolTip>内容</ToolTip>
+          <Default>内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 按钮触发器 -->
+<button class="am-btn am-btn-primary" data-am-offcanvas="{target: '$selected$$#your-id$$end$'}">$selected$$点击显示侧边栏$$end$</button>
+<!-- 侧边栏内容 -->
+<div id="$selected$$your-id$$end$" class="am-offcanvas">
+  <div class="am-offcanvas-bar">
+    <div class="am-offcanvas-content">
+    <!-- 你的内容 -->
+    $selected$$内容$$end$
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

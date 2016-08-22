@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-comment</Title>
+      <Author>南方网景</Author>
+      <Description>评论组件：单条</Description>
+      <HelpUrl>http://amazeui.org/css/comment</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-comment</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>评论者</ID>
+          <Type />
+          <ToolTip>评论者</ToolTip>
+          <Default>评论者</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>评论于</ID>
+          <Type />
+          <ToolTip>评论于</ToolTip>
+          <Default>评论于</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>评论内容</ID>
+          <Type />
+          <ToolTip>评论内容</ToolTip>
+          <Default>评论内容</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<article class="am-comment"> <!-- 评论容器 -->
+  <a href="">
+    <img class="am-comment-avatar" alt=""/> <!-- 评论者头像 -->
+  </a>
+
+  <div class="am-comment-main"> <!-- 评论内容容器 -->
+    <header class="am-comment-hd">
+      <!--<h3 class="am-comment-title">评论标题</h3>-->
+      <div class="am-comment-meta"> <!-- 评论元数据 -->
+        <a href="#link-to-user" class="am-comment-author">$selected$$评论者$$end$</a> <!-- 评论者 -->
+        $selected$$评论于$$end$ <time datetime=""></time>
+      </div>
+    </header>
+
+    <div class="am-comment-bd">$selected$$评论内容$$end$</div> <!-- 评论内容 -->
+  </div>
+</article>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-titlebar:col</Title>
+      <Author>南方网景</Author>
+      <Description>标题栏：多链接</Description>
+      <HelpUrl>http://amazeui.org/widgets/titlebar</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-titlebar:col</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>标题</ID>
+          <Type />
+          <ToolTip>标题</ToolTip>
+          <Default>标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>子栏目</ID>
+          <Type />
+          <ToolTip>子栏目</ToolTip>
+          <Default>子栏目</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+  <div data-am-widget="titlebar" class="am-titlebar am-titlebar-cols" >
+    <h2 class="am-titlebar-title ">
+        <a href="#wtf" class="">$selected$$标题$$end$</a>
+    </h2>
+    <nav class="am-titlebar-nav">
+        <a href="#c1" class="">$selected$$子栏目$$end$</a>
+        <a href="#c2" class="">$selected$$子栏目$$end$</a>
+        <a href="#c3" class="">$selected$$子栏目$$end$</a>
+    </nav>
+</div>
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

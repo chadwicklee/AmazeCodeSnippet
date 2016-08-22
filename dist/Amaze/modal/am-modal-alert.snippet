@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-modal:alert</Title>
+      <Author>南方网景</Author>
+      <Description>模拟窗口：消息框</Description>
+      <HelpUrl>http://amazeui.org/javascript/modal</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-modal:alert</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>my-id</ID>
+          <Type />
+          <ToolTip>my-id</ToolTip>
+          <Default>my-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>my-alert</ID>
+          <Type />
+          <ToolTip>my-alert</ToolTip>
+          <Default>my-alert</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>Modal Alert 标题</ID>
+          <Type />
+          <ToolTip>Modal Alert 标题</ToolTip>
+          <Default>Modal Alert 标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>Hello world！</ID>
+          <Type />
+          <ToolTip>Hello world！</ToolTip>
+          <Default>Hello world！</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 触发 button -->
+<button class="am-btn am-btn-secondary" data-am-modal="{target: '#$selected$$my-id$$end$'}">alert</button>
+<div class="am-modal am-modal-alert" tabindex="-1" id="$selected$$my-alert$$end$">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">$selected$$Modal Alert 标题$$end$</div>
+    <div class="am-modal-bd">
+      $selected$$Hello world！$$end$
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
+    </div>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

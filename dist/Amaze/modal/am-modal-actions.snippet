@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-modal:actions</Title>
+      <Author>南方网景</Author>
+      <Description>模拟窗口：下面弹出（类似IOS）</Description>
+      <HelpUrl>http://amazeui.org/javascript/modal</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-modal:actions</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>my-id</ID>
+          <Type />
+          <ToolTip>my-id</ToolTip>
+          <Default>my-id</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>my-actions</ID>
+          <Type />
+          <ToolTip>my-actions</ToolTip>
+          <Default>my-actions</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>wechat</ID>
+          <Type />
+          <ToolTip>wechat</ToolTip>
+          <Default>wechat</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>wechat 标题</ID>
+          <Type />
+          <ToolTip>wechat 标题</ToolTip>
+          <Default>wechat 标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>mobile</ID>
+          <Type />
+          <ToolTip>mobile</ToolTip>
+          <Default>mobile</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>mobile 标题</ID>
+          <Type />
+          <ToolTip>mobile 标题</ToolTip>
+          <Default>mobile 标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>twitter</ID>
+          <Type />
+          <ToolTip>twitter</ToolTip>
+          <Default>twitter</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>twitter 标题</ID>
+          <Type />
+          <ToolTip>twitter 标题</ToolTip>
+          <Default>twitter 标题</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>取消</ID>
+          <Type />
+          <ToolTip>取消</ToolTip>
+          <Default>取消</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$"><![CDATA[
+<!-- 触发 button -->
+<button class="am-btn am-btn-secondary" data-am-modal="{target: '#$selected$$my-id$$end$'}">actions</button>
+<div class="am-modal-actions" id="$selected$$my-actions$$end$">
+  <div class="am-modal-actions-group">
+    <ul class="am-list">
+      <li class="am-modal-actions-header"></li>
+      <li><a href="#"><span class="am-icon-$selected$$wechat$$end$"></span>$selected$$wechat 标题$$end$</a></li>
+      <li><a href="#"><i class="am-icon-$selected$$mobile$$end$"></i>$selected$$mobile 标题$$end$</a></li>
+      <li class="am-modal-actions-danger"><a href="#"><i class="am-icon-$selected$$twitter$$end$"></i> $selected$$twitter 标题$$end$ </a></li>
+    </ul>
+  </div>
+  <div class="am-modal-actions-group">
+    <button class="am-btn am-btn-secondary am-btn-block" data-am-modal-close>$selected$$取消$$end$</button>
+  </div>
+</div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.1.0">
+    <Header>
+      <Title>am-footer</Title>
+      <Author>南方网景</Author>
+      <Description>页脚：默认</Description>
+      <HelpUrl>http://amazeui.org/widgets/footer</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <FileExtensions>
+        aspx;master;ascx;html
+      </FileExtensions>
+      <Shortcut>am-footer</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>网站</ID>
+          <Type />
+          <ToolTip>网站</ToolTip>
+          <Default>网站</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>网址</ID>
+          <Type />
+          <ToolTip>网址</ToolTip>
+          <Default>网址</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>公司</ID>
+          <Type />
+          <ToolTip>公司</ToolTip>
+          <Default>公司</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>备案号</ID>
+          <Type />
+          <ToolTip>备案号</ToolTip>
+          <Default>备案号</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="html" Kind="" Delimiter="$">
+        <![CDATA[
+<footer data-am-widget="footer"
+          class="am-footer am-footer-default"
+           data-am-footer="{  }">
+    <div class="am-footer-switch">
+    <span class="am-footer-ysp" data-rel="mobile"
+          data-am-modal="{target: '#am-switch-mode'}">
+          $selected$$网站$$end$
+    </span>
+      <span class="am-footer-divider"> | </span>
+      <a id="godesktop" data-rel="desktop" class="am-footer-desktop" href="javascript:">
+          电脑版
+      </a>
+    </div>
+    <div class="am-footer-miscs ">
+
+          <p>由 <a href="$selected$$网址$$end$" title="$selected$$公司$$end$"
+                                                target="_blank" class="">$selected$$网址$$end$</a>
+            提供技术支持</p>
+        <p>CopyRight©2014  $selected$$备案号$$end$ Inc.</p>
+        <p>$selected$$公司$$end$</p>
+    </div>
+  </footer>
+
+  <div id="am-footer-modal"
+       class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd am-modal-footer-hd">
+        <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin " data-am-modal-close>&times;</a>
+      </div>
+      <div class="am-modal-bd">
+          您正在浏览的是
+
+        <span class="am-switch-mode-owner">
+            $selected$$公司$$end$
+        </span>
+
+        <span class="am-switch-mode-slogan">
+              为您当前手机订制的移动网站。
+        </span>
+      </div>
+    </div>
+  </div>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
